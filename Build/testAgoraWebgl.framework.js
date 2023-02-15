@@ -1254,7 +1254,7 @@ var tempDouble;
 var tempI64;
 
 var ASM_CONSTS = {
- 4240292: function($0, $1, $2) {
+ 4240388: function($0, $1, $2) {
   navigator.mediaDevices.getUserMedia(emval_handle_array[$0].value).then(function(stream) {
    var h = emval_handle_array.push({
     refcount: 1,
@@ -1263,7 +1263,7 @@ var ASM_CONSTS = {
    Module.dynCall_vii($1, $2, h);
   });
  },
- 4240491: function($0, $1, $2) {
+ 4240587: function($0, $1, $2) {
   navigator.mediaDevices.getUserMedia(emval_handle_array[$0].value).then(function(stream) {
    var h = emval_handle_array.push({
     refcount: 1,
@@ -1272,7 +1272,7 @@ var ASM_CONSTS = {
    Module.dynCall_vii($1, $2, h);
   });
  },
- 4240690: function($0, $1, $2) {
+ 4240786: function($0, $1, $2) {
   emval_handle_array[$0].value.onaudioprocess = function(e) {
    var h = emval_free_list.length ? emval_free_list.pop() : emval_handle_array.length;
    emval_handle_array[h] = {
@@ -1282,7 +1282,7 @@ var ASM_CONSTS = {
    Module.dynCall_vii($1, $2, h);
   };
  },
- 4240926: function($0) {
+ 4241022: function($0) {
   var constraints = navigator.mediaDevices.getSupportedConstraints();
   var constraintsHandle = emval_handle_array.push({
    refcount: 1,
@@ -1296,7 +1296,7 @@ var ASM_CONSTS = {
    Module.dynCall_vii($0, devicesHandle, constraintsHandle);
   });
  },
- 4241300: function($0, $1, $2) {
+ 4241396: function($0, $1, $2) {
   (async function() {
    try {
     const ab2str = buf => String.fromCharCode.apply(null, new Uint8Array(buf));
@@ -1323,7 +1323,7 @@ var ASM_CONSTS = {
    }
   })();
  },
- 4242022: function($0, $1, $2, $3, $4, $5, $6) {
+ 4242118: function($0, $1, $2, $3, $4, $5, $6) {
   (async function() {
    try {
     const kstr = UTF8ToString($0);
@@ -1349,7 +1349,7 @@ var ASM_CONSTS = {
    }
   })();
  },
- 4242864: function($0, $1) {
+ 4242960: function($0, $1) {
   if (!navigator.permissions) return;
   var name = "";
   switch ($0) {
@@ -1370,14 +1370,14 @@ var ASM_CONSTS = {
    Module.dynCall_vii($1, $0, state);
   });
  },
- 4243205: function($0, $1, $2) {
+ 4243301: function($0, $1, $2) {
   navigator.mediaDevices.getUserMedia(emval_handle_array[$0].value).then(function(stream) {
    Module.dynCall_vii($1, $2, 3);
   }).catch(function(err) {
    Module.dynCall_vii($1, $2, 2);
   });
  },
- 4243394: function($0, $1, $2) {
+ 4243490: function($0, $1, $2) {
   var recorder = emval_handle_array[$0].value;
   recorder.ondataavailable = function(e) {
    var handle = emval_handle_array.length;
@@ -1388,26 +1388,26 @@ var ASM_CONSTS = {
    Module.dynCall_vii($1, $2, handle);
   };
  },
- 4243622: function() {
+ 4243718: function() {
   Module["emscripten_get_now_backup"] = performance.now;
  },
- 4243677: function($0) {
+ 4243773: function($0) {
   performance.now = function() {
    return $0;
   };
  },
- 4243725: function($0) {
+ 4243821: function($0) {
   performance.now = function() {
    return $0;
   };
  },
- 4243773: function() {
+ 4243869: function() {
   performance.now = Module["emscripten_get_now_backup"];
  },
- 4243828: function() {
+ 4243924: function() {
   return Module.webglContextAttributes.premultipliedAlpha;
  },
- 4243889: function() {
+ 4243985: function() {
   return Module.webglContextAttributes.preserveDrawingBuffer;
  }
 };
